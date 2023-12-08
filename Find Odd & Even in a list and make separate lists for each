@@ -1,0 +1,29 @@
+def findEven(list):
+    lenList = len(list)
+    evenlist = []
+    oddList=[]
+    for i in range(0,lenList-1):
+        if list[i] % 2 == 0:
+            evenlist.append(list[i])
+            print(str(list[i])+ " is even")
+        else:
+            oddList.append(list[i])
+            print(str(list[i])+ " is odd")
+    return evenlist,oddList
+
+x,y = findEven([3,4,5,6,7,8,9,333,545,333])
+print("Even list is  :" + str(x))
+print("Odd list is  :" + str(y))
+
+#result
+3 is odd
+4 is even
+5 is odd
+6 is even
+7 is odd
+8 is even
+9 is odd
+333 is odd
+545 is odd
+Even list is  :[4, 6, 8]
+Odd list is  :[3, 5, 7, 9, 333, 545]
