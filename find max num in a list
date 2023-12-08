@@ -1,0 +1,12 @@
+#Python code for find max num in a list
+
+def findMax(list):
+    maxNum = list[0]
+    lenList = len(list)
+    for i in range(1,lenList):
+        if  maxNum < list[i]:
+            maxNum = list[i]
+    return maxNum
+            # return maxNum
+print(findMax([3,6,7,4,9,100,99]))
+#Result - 100
